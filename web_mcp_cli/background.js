@@ -268,8 +268,10 @@ function normalizeServersMap(rawMap) {
 
   return Object.entries(rawMap).map(([serverId, serverConfig]) => ({
     ...(serverConfig && typeof serverConfig === "object" ? serverConfig : {}),
-    id: toSafeString(serverConfig?.id) || toSafeString(serverId) || undefined,
-    name: toSafeString(serverConfig?.name) || toSafeString(serverId) || undefined
+    // For object-style mcpServers config, the outer key is the canonical server id.
+    // This avoids copied snippets with stale inner ids being silently deduped away.
+    id: toSafeString(serverId) || toSafeString(serverConfig?.id) || undefined,
+    name: toSafeString(serverConfig?.name) || toSafeString(serverId) || toSafeString(serverConfig?.id) || undefined
   }));
 }
 
