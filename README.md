@@ -17,7 +17,7 @@
 
 ## 使用教程
 > 使用教程地址：https://blog.aiguicai.com/archives/cursor_toolbox    
-> 使用视频地址：https://www.bilibili.com/video/BV1mpcozoEXL/?share_source=copy_web&vd_source=23971f77ed7085fd5791077dbce9df89
+> 使用视频地址：https://www.bilibili.com/video/BV1mpcozoEXL/?share_source=copy_web&vd_source=23971f77ed7085fd5791077dbce9df89    
 > 本地MCP网关工具地址：https://github.com/510myRday/MCP-Gateway
 
 ## 明确声明
